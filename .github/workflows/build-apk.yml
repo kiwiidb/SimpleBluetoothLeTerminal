@@ -2,11 +2,8 @@ name: Build APK
 
 on:
   push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - main
+    tags:
+    - '*'
 
 jobs:
   build:
